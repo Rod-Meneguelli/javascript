@@ -1,0 +1,1 @@
+Estou aprendendo javascript e sempre que possível irei postar minha evolução.
