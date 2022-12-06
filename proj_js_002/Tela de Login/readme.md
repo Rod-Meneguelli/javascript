@@ -10,7 +10,7 @@ Uma página de login desenvolvida em HTML e CSS.
 
 
 
-Basta executar o arquivo "index.html" em seu navegador.
+Realizar o download dos arquivos em seu computador e executar o arquivo "index.html" em seu navegador.
 
 
 
