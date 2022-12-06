@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10-Eventos Dom-Ex04 </title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Interação
+
+    </div>
+
+    <script>
+        // interação pegando o id da div, no html
+        var x = window.document.getElementById('area')
+            function clicar() {
+                x.innerText = 'Clicou!'
+                x.style.background = 'red'
+
+            }
+            function entrar() {
+                x.innerText = "Mouse Dentro!!!"
+            }
+            function sair() {
+                x.innerText = "Mouse Fora!!!"
+                x.style.background = 'green'
+            }
+
+
+    </script>
+    
+</body>
+</html>

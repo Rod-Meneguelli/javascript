@@ -1,0 +1,146 @@
+/* Estilos Gerais */
+
+/* aqui é como se fosse um reset de css para padronizar todos os elementos */
+
+* {
+    margin: 0; /* margins zeradas*/
+    padding: 0; 
+    box-sizing: border-box; /* serve para os inputs que vem um pouco menor */
+    font-family: Helvetica;
+    color: rgb(41, 37, 37); /* setando a cor de todos os elementos */
+    border: none;
+
+}
+
+body {
+    background-image: url('../img/img-background01.jpg');
+    background-size: cover; /* a img ocupa o maximo possivel da tela mostrando toda a img */
+    background-position-y: -200px; /* "sobe na tela" a img em 200px */
+
+}
+
+/* tira aquela borda azul dos inputs que vem no chrome*/
+textarea:focus, input:focus {
+    outline: none;
+}
+
+/* todos os links da página */
+a {
+    font-size: .8rem; /* 16 x .8 = X para adaptar a fonte do root element (HTML) a todos os dispositivos */
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/* Estilos do Container */
+
+#login-conteiner {
+    background-color: white;
+    width: 400px;
+    margin-left: auto; /* para alinhar horizontal um elemento de bloco */
+    margin-right: auto; /* para alinhar horizontal um elemento de bloco */
+    padding: 20px 30px; /* 20px em cima e baixo e 30px nas laterais */
+    margin-top: 10vh; /* view high - medida proporcional a tela do usuario, neste caso em 10% do começo da tela */
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* Formulário */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    /* vai servir para afastar do título e das redes sociais */
+}
+
+label, input {
+    /* aqui eu digo que eles serão elementos do bloco */
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #0a1dc9; /* mudar a cor da borda quando eu dar foco nele (seleciono ele) */ 
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block; /* tenho que colocar o block pq senão não seria afetado pelo alinhamento a direita */
+}
+
+/* como não tem id eu insiro entre parenteses o tipo "submit" aí eu atinjo apenas este */
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: white;
+    background-color: #08558B;
+    cursor: pointer; /* faz aparecer a "mão" */
+}
+
+/* Fazer a transição ficar mais suave quando o ponteiro entrar na area do botão */
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+/* facebook e linkedin  */
+
+#redes-sociais {
+    margin-bottom: 20px;
+}
+
+#redes-sociais p {
+    margin-bottom: 20px;
+}
+
+#redes-sociais i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* "transforma" o ícone do face e linkedin - fica bolinha*/
+    line-height: 40px; /* alinha o texto dentro do ícone */
+    color: white;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+/* Registro */
+
+#registro-conteiner p {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px
+    
+    
+}
